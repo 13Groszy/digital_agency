@@ -4,59 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/dist/output.css">
     <title>Digital_Agency</title>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="" alt="">
-            <h2>Agency_Name</h2>
+    <header class="flex">
+        <div class="flex items-center m-2">
+            <img class="h-10" src="../src/green_circle.png" alt="">
+            <h2 class="text-3xl font-bold ml-2">Agency</h2>
         </div>
-        <nav>
+        <nav class="hidden absolute h-screen w-screen bg-green-300  items-center justify-center">
             <ul>
-                <li><a href="#"></a>Home</li>
-                <li><a href="#"></a>Our Work</li>
-                <li><a href="#"></a>Service</li>
-                <li><a href="#"></a>About</li>
-                <li><a href="#"></a>Contact</li>
+                <li class="m-20"><a href="#"></a>Home</li>
+                <li class="m-20"><a href="#"></a>Our Work</li>
+                <li class="m-20"><a href="#"></a>Service</li>
+                <li class="m-20"><a href="#"></a>About</li>
+                <li class="m-20"><a href="#"></a>Contact</li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section id="hero" class="mt-6 ml-2">
             <div>
-                <h3>Best Agency in <span>Europe</span></h3>
-                <h1>Digital Agency</h1>
-                <h1>& Solutions</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, voluptatem.</p>
-                <div>
-                    <button>Get Started<i></i></button>
-                    <button>See Live Demo<i></i></button>
+                <h3 class="font-bold">Best Agency in <span class="text-green-900">Europe</span></h3>
+                <h1 class="font-bold text-4xl">Digital Agency</h1>
+                <h1 class="text-4xl mt-1">& Solutions</h1>
+                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, voluptatem.</p>
+                <div class="mt-2 flex">
+                    <button class="px-4 py-2 rounded-full flex items-center bg-green-600 text-white">Get Started<i class='ml-2 text-xl bx bx-play' ></i></button>
+                    <button class="px-4 py-2 flex items-center">See Live Demo<i class='ml-2 text-xl text-green-600 bx bx-play-circle'></i></button>
                 </div>
             </div>
-            <div> <!--Hero Image BG--></div>
+            <div class="mt-6 hero_img">
+                <img  src="../src/hero.png" alt="">
+            </div>
         </section>
-        <div class="socials">
-            <div>
-                <i></i>
-                <p>Lorem.</p>
-            </div>
-            <div>
-                <i></i>
-                <p>Necessitatibus?</p>
-            </div>
-            <div>
-                <i></i>
-                <p>Corrupti.</p>
-            </div>
-            <div>
-                <i></i>
-                <p>Eos.</p>
-            </div>
-            <div>
-                <i></i>
-                <p>Possimus!</p>
+        <div id="socials" class="">
+            <div class="w-full bg-white rounded-t-3xl -translate-y-2 flex items-center justify-evenly">
+                <i class='bx bx-chevron-left text-3xl text-gray-400' ></i>
+                <div class="flex py-4 items-center justify-center ">
+                    <i class='bx bxs-leaf text-green-700 text-5xl'></i>
+                    <p class="font-bold">Lorem</p>
+                </div>
+                <i class='bx bx-chevron-right text-3xl text-gray-400' ></i>
             </div>
         </div>
         <section class="about">
