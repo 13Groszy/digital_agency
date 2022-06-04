@@ -36,11 +36,11 @@
                     <button class="px-4 py-2 flex items-center">See Live Demo<i class='ml-2 text-xl text-green-600 bx bx-play-circle'></i></button>
                 </div>
             </div>
-            <div class="mt-6 hero_img">
+            <div class="mt-6 hero_img before:before-element">
                 <img  src="../src/hero.png" alt="">
             </div>
         </section>
-        <div id="socials" class="">
+        <div id="socials">
             <div class="w-full bg-white rounded-t-3xl -translate-y-2 flex items-center justify-evenly">
                 <i class='bx bx-chevron-left text-3xl text-gray-400' ></i>
                 <div class="flex py-4 items-center justify-center ">
@@ -50,51 +50,53 @@
                 <i class='bx bx-chevron-right text-3xl text-gray-400' ></i>
             </div>
         </div>
-        <section class="about">
-            <div>
-                <h3></h3>
-                <h2></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a exercitationem provident minus temporibus, sed nostrum eum praesentium perspiciatis accusamus vitae optio voluptatem magnam voluptatibus sapiente voluptatum dolores iste rerum?</p>
-                <button><i></i></button>
+        <section id="about" class="flex flex-col-reverse -translate-y-2 pb-12">
+            <div class="mt-16 ml-4">
+                <h3 class="text-green-700 font-bold">ABOUT US</h3>
+                <h2 class="text-3xl font-bold">Boosts Your Business With Lorem</h2>
+                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a exercitationem provident minus temporibus, sed nostrum eum praesentium perspiciatis accusamus.</p>
+                <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-200 text-green-700 font-bold">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
             </div>
-            <div>
-                <img src="" alt="">
-            </div>
-        </section>
-        <section class="services">
-            <div><div>
-                <i></i>
-                <h4>Web Development</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, sit?</p>
-                <button>More Details<i></i></button>
-            </div>
-            <div>
-                <i></i>
-                <h4>SEO & Marketing</h4>
-                <p>Iusto fugit sint perspiciatis odio possimus, totam fugiat accusantium reiciendis?</p>
-                <button>More Details<i></i></button>
-            </div>
-            <div>
-                <i></i>
-                <h4>UI/UX Analysis</h4>
-                <p>Et quo mollitia sed eius impedit sunt maiores nulla? Numquam.</p>
-                <button>More Details<i></i></button>
-            </div>
-            <div>
-                <i></i>
-                <h4>Graphics Design</h4>
-                <p>Commodi asperiores ducimus sequi aut id minima. Reprehenderit, similique vero?</p>
-                <button>More Details<i></i></button>
-            </div></div>
-            <div>
-                <h3>SERVICES</h3>
-                <h2>Our Services</h2>
-                <h2>Include</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nesciunt nisi hic laborum similique libero excepturi, iure cumque labore veniam!</p>
-                <button>All Services<i></i></button>
+            <div class="meeting before:before-element bg-green-200 -z-20">
+                <img class="w-11/12 mt-6 -mb-8 m-auto rounded-tr-none rounded-3xl z-10" src="../src/meeting.jpg" alt="">
             </div>
         </section>
-        <section class="projects"> <!--Slideshow-->
+        <section id="services" class="bg-green-100 z-40 pt-12 pb-12">
+            <div class="ml-4">
+                <h3 class="font-bold text-green-700">SERVICES</h3>
+                <h2 class="text-3xl font-bold mt-2">Our Services</h2>
+                <h2 class="text-3xl">Include</h2>
+                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nesciunt nisi hic laborum similique libero excepturi, iure cumque labore veniam!</p>
+                <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-200 text-green-700 font-bold">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
+            </div>
+            <div class="flex flex-wrap gap-x-2 gap-y-8 justify-evenly mt-12">
+                <div class="p-8 w-3/4 bg-gradient-to-br from-green-400 to-green-700 rounded-2xl text-white">
+                    <i class='text-5xl bx bx-planet'></i>
+                    <h4 class="font-bold">Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, sit?</p>
+                     <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
+                </div>
+                <div class="p-6 w-3/4 bg-white rounded-3xl">
+                    <i class='text-5xl text-green-700 bx bx-planet'></i>
+                    <h4 class="font-bold">SEO & Marketing</h4>
+                    <p>Lusto fugit sint perspiciatis odio possimus, totam fugiat accusantium reiciendis?</p>
+                     <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
+                </div>
+                <div class="p-6 w-3/4 bg-white rounded-3xl">
+                    <i class='text-5xl text-green-700 bx bx-planet'></i>
+                    <h4 class="font-bold">UI/UX Analysis</h4>
+                    <p>Et quo mollitia sed eius impedit sunt maiores nulla? Numquam.</p>
+                     <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
+                </div>
+                <div class="p-6 w-3/4 bg-white rounded-3xl">
+                    <i class='text-5xl text-green-700 bx bx-planet'></i>
+                    <h4 class="font-bold">Graphics Design</h4>
+                    <p>Commodi asperiores ducimus sequi aut id minima. Reprehenderit, similique vero?</p>
+                     <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="bg-green-100"> <!--Slideshow-->
             <div>
                 <div>
                     <h3>PROJECTS</h3>
