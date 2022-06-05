@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+    .before-element{
+        @apply content-[''] absolute -z-10
+    }
+}
+
+.hero_img:before{
+    height: 450px;
+    width: 450px;
+    background-color: rgb(22, 163, 74);
+    border-radius: 100%;
+    transform: translateY(20%) translateX(-20%);
+}
+.meeting:before{
+    background: url('../src/green_doughnut.png');
+    height: 200%;
+    width: 200%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(5%) translateX(-25%);
+}
