@@ -23,16 +23,17 @@
                 <li class="hover:text-black hover:underline h-1/6"><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="lg:hidden">
+        <div id="burger" onclick="toggleBurger()" class="lg:hidden">
             <i class='bx bx-menu text-5xl'></i>
         </div>
-        <nav class="hidden absolute h-screen w-screen bg-green-300  items-center justify-center">
+        <nav id="burgerMenu" class="fixed -translate-x-[500%] z-20 h-screen w-screen bg-green-300  items-center justify-center  ease-in duration-1000 transition-all">
+            <button class="absolute right-1 top-1 px-3 py-1 bg-gray-700 rounded-sm text-white" onclick="toggleBurger()">X</button>
             <ul class="text-center h-screen">
-                <li class="h-1/6 mt-[20%]"><a href="#">Home</a></li>
-                <li class="h-1/6"><a href="#blog">Our Work</a></li>
-                <li class="h-1/6"><a href="#services">Services</a></li>
-                <li class="h-1/6"><a href="#about">About</a></li>
-                <li class="h-1/6"><a href="#contact">Contact</a></li>
+                <li class="h-1/6 mt-[20%]"><a onclick="toggleBurger()" href="#">Home</a></li>
+                <li class="h-1/6"><a onclick="toggleBurger()" href="#blog">Our Work</a></li>
+                <li class="h-1/6"><a onclick="toggleBurger()" href="#services">Services</a></li>
+                <li class="h-1/6"><a onclick="toggleBurger()" href="#about">About</a></li>
+                <li class="h-1/6"><a onclick="toggleBurger()" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -44,8 +45,8 @@
                 <h1 class="text-4xl mt-1 text-black">& Solutions</h1>
                 <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, voluptatem.</p>
                 <div class="mt-2 flex">
-                    <button class="px-4 py-2 rounded-full flex items-center bg-green-600 text-white">Get Started<i class='ml-2 text-xl bx bx-play' ></i></button>
-                    <button class="px-4 py-2 flex items-center">See Live Demo<i class='ml-2 text-xl text-green-600 bx bx-play-circle'></i></button>
+                    <button class="px-4 py-2 rounded-full flex items-center bg-green-600 text-white hover:text-green-700 hover:bg-white hover:border hover:border-solid hover:border-green-700 hover:py-[6px] hover:px-[15px]">Get Started<i class='ml-2 text-xl bx bx-play' ></i></button>
+                    <button class="px-4 py-2 md:ml-2 flex items-center hover:bg-white hover:border hover:border-solid hover:border-green-700 hover:py-[6px] hover:px-[15px] hover:rounded-full">See Live Demo<i class='ml-2 text-xl text-green-600 bx bx-play-circle'></i></button>
                 </div>
             </div>
             <div class="mt-6 hero_img before:before-element md:w-1/2 lg:max-w-[500px] md:before:translate-x-0 md:before:h-[300px] md:before:w-[300px] md:before:translate-y-8">
@@ -67,7 +68,7 @@
                 <h3 class="text-green-700 font-bold">ABOUT US</h3>
                 <h2 class="text-3xl font-bold text-black lg:mt-4 lg:mb-2">Boosts Your Business With Lorem</h2>
                 <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a exercitationem provident minus temporibus, sed nostrum eum praesentium perspiciatis accusamus.</p>
-                <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-200 text-green-700 font-bold">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
+                <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-200 text-green-700 font-bold hover:text-green-700 hover:bg-white hover:border hover:border-solid hover:border-green-700 hover:py-[3px] hover:pl-[15px] hover:pr-[3px]">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
             </div>
             <div class="meeting md:before:bg-none before:before-element bg-green-200 md:bg-transparent -z-20 lg:max-w-[500px]">
                 <img class="w-11/12 mt-6 -mb-8 md:w-5/6 m-auto rounded-tr-none rounded-3xl z-10" src="../src/meeting.jpg" alt="">
@@ -79,32 +80,32 @@
                 <h2 class="text-3xl font-bold mt-2 text-black">Our Services</h2>
                 <h2 class="text-3xl text-black">Include</h2>
                 <p class="mt-2 lg:w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nesciunt nisi hic laborum similique libero excepturi, iure cumque labore veniam!</p>
-                <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-200 text-green-700 font-bold">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
+                <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-200 text-green-700 font-bold hover:text-green-700 hover:bg-white hover:border hover:border-solid hover:border-green-700 hover:py-[3px] hover:pl-[15px] hover:pr-[3px]">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
             </div>
             <div class="flex flex-wrap gap-x-2 gap-y-8 justify-evenly mt-12 lg:ml-16 lg:max-w-[500px]">
                 <div class="p-8 w-3/4 bg-gradient-to-br from-green-400 to-green-700 rounded-2xl text-white shadow-xl md:w-5/12 md:translate-y-4">
                     <i class='text-5xl bx bx-planet'></i>
                     <h4 class="font-bold">Web Development</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, sit?</p>
-                     <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
+                     <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white hover:text-green-700 hover:bg-white hover:border hover:border-solid hover:border-green-700 hover:py-[3px] hover:pl-[15px] hover:pr-[3px]">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
                 </div>
                 <div class="p-6 w-3/4 bg-green-100 rounded-3xl shadow-xl md:w-5/12 md:-translate-y-8">
                     <i class='text-5xl text-green-700 bx bx-planet'></i>
                     <h4 class="font-bold text-black">SEO & Marketing</h4>
                     <p>Lusto fugit sint perspiciatis odio possimus, totam fugiat accusantium reiciendis?</p>
-                     <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
+                     <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white hover:text-green-700 hover:bg-white hover:border hover:border-solid hover:border-green-700 hover:py-[3px] hover:pl-[15px] hover:pr-[3px]">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
                 </div>
                 <div class="p-6 w-3/4 bg-green-100 rounded-3xl shadow-xl md:w-5/12 md:translate-y-4">
                     <i class='text-5xl text-green-700 bx bx-planet'></i>
                     <h4 class="font-bold text-black">UI/UX Analysis</h4>
                     <p>Et quo mollitia sed eius impedit sunt maiores nulla? Numquam.</p>
-                     <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
+                     <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white hover:text-green-700 hover:bg-white hover:border hover:border-solid hover:border-green-700 hover:py-[3px] hover:pl-[15px] hover:pr-[3px]">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
                 </div>
                 <div class="p-6 w-3/4 bg-green-100 rounded-3xl shadow-xl md:w-5/12 md:-translate-y-8">
                     <i class='text-5xl text-green-700 bx bx-planet'></i>
                     <h4 class="font-bold text-black">Graphics Design</h4>
                     <p>Commodi asperiores ducimus sequi aut id minima. Reprehenderit, similique vero?</p>
-                     <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
+                     <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white hover:text-green-700 hover:bg-white hover:border hover:border-solid hover:border-green-700 hover:py-[3px] hover:pl-[15px] hover:pr-[3px]">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
                 </div>
             </div>
         </section>
@@ -150,7 +151,7 @@
                     <p class="text-sm mt-1 mb-4">Content Writer</p>
                 </div>
             </div>
-            <button class="flex items-center p-2 px-4 mt-8 m-auto rounded-3xl bg-green-700 text-white">Join Us Now!</button>
+            <button class="hover:text-green-700 hover:bg-white hover:border hover:border-solid hover:border-green-700 hover:py-[7px] hover:px-[14px] flex items-center p-2 px-4 mt-8 m-auto rounded-3xl bg-green-700 text-white ">Join Us Now!</button>
         </section>
         <section id="blog" class="mt-12 lg:mt-20 text-center">
             <h3 class="font-bold text-green-700 mb-2 lg:mb-4">BLOG</h3>
@@ -211,11 +212,11 @@
                 <p>Lorem, ipsum.</p>
                 <p class="text-green-700">Nobis, omnis.</p>
                 <div class="mt-4 text-black">
-                    <i class='bx bxl-twitter text-4xl'></i>
-                    <i class='bx bxl-instagram text-4xl'></i>
-                    <i class='bx bxl-facebook text-4xl'></i>
-                    <i class='bx bxl-pinterest text-4xl'></i>
-                    <i class='bx bxl-snapchat text-4xl'></i>
+                    <a href="#"><i class='hover:text-green-700 bx bxl-twitter text-4xl'></i></a>
+                    <a href="#"><i class='hover:text-green-700 bx bxl-instagram text-4xl'></i></a>
+                    <a href="#"><i class='hover:text-green-700 bx bxl-facebook text-4xl'></i></a>
+                    <a href="#"><i class='hover:text-green-700 bx bxl-pinterest text-4xl'></i></a>
+                    <a href="#"><i class='hover:text-green-700 bx bxl-snapchat text-4xl'></i></a>
                 </div>
             </div>
         </section>
@@ -223,5 +224,6 @@
     <footer class="text-center bg-green-700 mt-6">
         <p class="text-white text-sm p-2 lg:p-6">2022 Copyright all right reserved</p>
     </footer>
+    <script src="./app.js"></script>
 </body>
 </html>
