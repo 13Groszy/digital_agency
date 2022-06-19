@@ -8,117 +8,109 @@
     <link rel="stylesheet" href="/dist/output.css">
     <title>Digital_Agency</title>
 </head>
-<body>
-    <header class="flex">
-        <div class="flex items-center m-2">
-            <img class="h-10" src="../src/green_circle.png" alt="">
-            <h2 class="text-3xl font-bold ml-2">Agency</h2>
+<body class="text-gray-700">
+    <header class="flex justify-around md:justify-between max-w-[1000px] m-auto">
+        <div class="flex items-center m-2 lg:m-4">
+            <img class="h-8" src="../src/green_circle.png" alt="">
+            <h2 class="text-3xl font-bold ml-2 text-black">Agency</h2>
+        </div>
+        <div class="hidden lg:block w-[500px]">
+            <ul class="text-center flex justify-around w-full mt-6">
+                <li class="hover:text-black hover:underline h-1/6"><a href="#"></a>Home</li>
+                <li class="hover:text-black hover:underline h-1/6"><a href="#"></a>Our Work</li>
+                <li class="hover:text-black hover:underline h-1/6"><a href="#"></a>Service</li>
+                <li class="hover:text-black hover:underline h-1/6"><a href="#"></a>About</li>
+                <li class="hover:text-black hover:underline h-1/6"><a href="#"></a>Contact</li>
+            </ul>
+        </div>
+        <div class="lg:hidden">
+            <i class='bx bx-menu text-5xl'></i>
         </div>
         <nav class="hidden absolute h-screen w-screen bg-green-300  items-center justify-center">
-            <ul>
-                <li class="m-20"><a href="#"></a>Home</li>
-                <li class="m-20"><a href="#"></a>Our Work</li>
-                <li class="m-20"><a href="#"></a>Service</li>
-                <li class="m-20"><a href="#"></a>About</li>
-                <li class="m-20"><a href="#"></a>Contact</li>
+            <ul class="text-center h-screen">
+                <li class="h-1/6 mt-[20%]"><a href="#"></a>Home</li>
+                <li class="h-1/6"><a href="#"></a>Our Work</li>
+                <li class="h-1/6"><a href="#"></a>Service</li>
+                <li class="h-1/6"><a href="#"></a>About</li>
+                <li class="h-1/6"><a href="#"></a>Contact</li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="hero" class="mt-6 ml-2">
-            <div>
-                <h3 class="font-bold">Best Agency in <span class="text-green-900">Europe</span></h3>
-                <h1 class="font-bold text-4xl">Digital Agency</h1>
-                <h1 class="text-4xl mt-1">& Solutions</h1>
+        <section id="hero" class="mt-6 md:ml-0 ml-2 md:flex md:items-center">
+            <div class="md:w-1/2 md:ml-8 lg:ml-32">
+                <h3 class="font-bold text-black">Best Agency in <span class="text-green-900">Europe</span></h3>
+                <h1 class="font-bold text-4xl text-black">Digital Agency</h1>
+                <h1 class="text-4xl mt-1 text-black">& Solutions</h1>
                 <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, voluptatem.</p>
                 <div class="mt-2 flex">
                     <button class="px-4 py-2 rounded-full flex items-center bg-green-600 text-white">Get Started<i class='ml-2 text-xl bx bx-play' ></i></button>
                     <button class="px-4 py-2 flex items-center">See Live Demo<i class='ml-2 text-xl text-green-600 bx bx-play-circle'></i></button>
                 </div>
             </div>
-            <div class="mt-6 hero_img before:before-element">
-                <img  src="../src/hero.png" alt="">
+            <div class="mt-6 hero_img before:before-element md:w-1/2 md:before:translate-x-0 md:before:h-[300px] md:before:w-[300px] md:before:translate-y-8">
+                <img class="md:h-[300px]" src="../src/hero.png" alt="">
             </div>
         </section>
         <div id="socials">
-            <div class="w-full bg-white rounded-t-3xl -translate-y-2 flex items-center justify-evenly">
+            <div class="w-full md:w-3/4 lg:w-1/2 m-auto bg-white rounded-t-3xl md:rounded-3xl -translate-y-2 flex items-center justify-evenly md:shadow-2xl">
                 <i class='bx bx-chevron-left text-3xl text-gray-400' ></i>
                 <div class="flex py-4 items-center justify-center ">
                     <i class='bx bxs-leaf text-green-700 text-5xl'></i>
-                    <p class="font-bold">Lorem</p>
+                    <p class="font-bold text-black">Lorem</p>
                 </div>
                 <i class='bx bx-chevron-right text-3xl text-gray-400' ></i>
             </div>
         </div>
-        <section id="about" class="flex flex-col-reverse -translate-y-2 pb-12">
-            <div class="mt-16 ml-4">
+        <section id="about" class="flex md:flex-row md:items-center flex-col-reverse -translate-y-2 pb-12 lg:min-h-[70vh] lg:bg-gradient-to-b lg:from-green-50 lg:to-white">
+            <div class="mt-16 ml-4 md:ml-16">
                 <h3 class="text-green-700 font-bold">ABOUT US</h3>
-                <h2 class="text-3xl font-bold">Boosts Your Business With Lorem</h2>
+                <h2 class="text-3xl font-bold text-black">Boosts Your Business With Lorem</h2>
                 <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus a exercitationem provident minus temporibus, sed nostrum eum praesentium perspiciatis accusamus.</p>
                 <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-200 text-green-700 font-bold">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
             </div>
-            <div class="meeting before:before-element bg-green-200 -z-20">
-                <img class="w-11/12 mt-6 -mb-8 m-auto rounded-tr-none rounded-3xl z-10" src="../src/meeting.jpg" alt="">
+            <div class="meeting md:before:bg-none before:before-element bg-green-200 md:bg-transparent -z-20">
+                <img class="w-11/12 mt-6 -mb-8 md:w-5/6 m-auto rounded-tr-none rounded-3xl z-10" src="../src/meeting.jpg" alt="">
             </div>
         </section>
-        <section id="services" class="bg-green-50 z-40 pt-12 pb-12">
-            <div class="ml-4">
+        <section id="services" class="bg-green-50 z-40 pt-12 pb-12 md:flex md:flex-row-reverse md:items-center">
+            <div class="ml-4 md:w-[200%] md:ml-0">
                 <h3 class="font-bold text-green-700">SERVICES</h3>
-                <h2 class="text-3xl font-bold mt-2">Our Services</h2>
-                <h2 class="text-3xl">Include</h2>
-                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nesciunt nisi hic laborum similique libero excepturi, iure cumque labore veniam!</p>
+                <h2 class="text-3xl font-bold mt-2 text-black">Our Services</h2>
+                <h2 class="text-3xl text-black">Include</h2>
+                <p class="mt-2 lg:w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nesciunt nisi hic laborum similique libero excepturi, iure cumque labore veniam!</p>
                 <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-200 text-green-700 font-bold">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
             </div>
-            <div class="flex flex-wrap gap-x-2 gap-y-8 justify-evenly mt-12">
-                <div class="p-8 w-3/4 bg-gradient-to-br from-green-400 to-green-700 rounded-2xl text-white shadow-xl">
+            <div class="flex flex-wrap gap-x-2 gap-y-8 justify-evenly mt-12 lg:ml-16">
+                <div class="p-8 w-3/4 bg-gradient-to-br from-green-400 to-green-700 rounded-2xl text-white shadow-xl md:w-5/12 md:translate-y-4">
                     <i class='text-5xl bx bx-planet'></i>
                     <h4 class="font-bold">Web Development</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, sit?</p>
                      <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
                 </div>
-                <div class="p-6 w-3/4 bg-green-100 rounded-3xl shadow-xl">
+                <div class="p-6 w-3/4 bg-green-100 rounded-3xl shadow-xl md:w-5/12 md:-translate-y-8">
                     <i class='text-5xl text-green-700 bx bx-planet'></i>
-                    <h4 class="font-bold">SEO & Marketing</h4>
+                    <h4 class="font-bold text-black">SEO & Marketing</h4>
                     <p>Lusto fugit sint perspiciatis odio possimus, totam fugiat accusantium reiciendis?</p>
                      <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
                 </div>
-                <div class="p-6 w-3/4 bg-green-100 rounded-3xl shadow-xl">
+                <div class="p-6 w-3/4 bg-green-100 rounded-3xl shadow-xl md:w-5/12 md:translate-y-4">
                     <i class='text-5xl text-green-700 bx bx-planet'></i>
-                    <h4 class="font-bold">UI/UX Analysis</h4>
+                    <h4 class="font-bold text-black">UI/UX Analysis</h4>
                     <p>Et quo mollitia sed eius impedit sunt maiores nulla? Numquam.</p>
                      <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
                 </div>
-                <div class="p-6 w-3/4 bg-green-100 rounded-3xl shadow-xl">
+                <div class="p-6 w-3/4 bg-green-100 rounded-3xl shadow-xl md:w-5/12 md:-translate-y-8">
                     <i class='text-5xl text-green-700 bx bx-planet'></i>
-                    <h4 class="font-bold">Graphics Design</h4>
+                    <h4 class="font-bold text-black">Graphics Design</h4>
                     <p>Commodi asperiores ducimus sequi aut id minima. Reprehenderit, similique vero?</p>
                      <button class="flex items-center pl-4 pr-2 py-1 mt-4 rounded-3xl bg-green-700 text-white">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
                 </div>
             </div>
         </section>
-        <section id="projects" class="bg-gradient-to-b from-green-100 to-white"> <!--Slideshow-->
-            <div class="mb-6">
-                <div class="ml-4">
-                    <h3 class="text-green-700 font-bold">PROJECTS</h3>
-                    <h2 class="font-bold text-3xl mt-2">Our Project</h2>
-                    <h2 class="text-3xl">Gallery</h2>
-                </div>
-                <button class="hidden items-center pl-4 pr-2 py-1 mt-4 m-auto rounded-3xl bg-white text-green-700 border-2 border-solid border-green-700">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
-            </div>
-            <div class="pb-12">
-                <button class="hidden"><</button>
-                <div class="relative h-56">
-                    <div><img class="border-4 border-solid border-white absolute w-5/12 top-6 -left-4" src="../src/flower_1.jpg" alt=""></div>
-                    <div><img class="border-4 border-solid border-white absolute inset-0 w-1/2 m-auto z-10" src="../src/flower_2.jpg" alt=""></div>
-                    <div><img class="border-4 border-solid border-white absolute w-5/12 -right-4 top-6" src="../src/flower_3.png" alt=""></div>
-                </div>
-                <button class="flex items-center pl-4 pr-2 py-1 mt-4 m-auto rounded-3xl bg-white text-green-700 border-2 border-solid border-green-700">More Details<i class='text-2xl  bx bx-chevron-right'></i></button>
-                <button class="hidden">></button>
-            </div>
-        </section>
-        <section id="testimonial" class="bg-green-100 text-center py-16 bg-gradient-to-b from-white to-green-100">
+        <section id="testimonial" class="bg-green-100 text-center py-16 bg-gradient-to-b from-green-50 to-white">
             <h3 class="text-green-700 font-bold mb-2">TESTIMONIAL</h3>
-            <h2 class="font-bold text-3xl">Our Client Feedback</h2>
+            <h2 class="font-bold text-3xl text-black">Our Client Feedback</h2>
             <div class="mt-12 bg-white p-4 rounded-3xl w-5/6 m-auto shadow-xl">
                 <p class="mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, perspiciatis iste voluptatum, dicta unde officia minima sapiente deserunt ipsum dolorum error dignissimos doloribus? Magnam, suscipit?</p>
                 <div class="mt-4">
@@ -128,13 +120,13 @@
                     <i class='text-yellow-500 bx bxs-star'></i>
                     <i class='text-yellow-500 bx bxs-star'></i>
                 </div>
-                <h3 class="font-bold text-lg">John Doe</h3>
+                <h3 class="font-bold text-lg text-black">John Doe</h3>
                 <p class="text-sm">UI/UX Designer | Agency_Name</p>
             </div>
         </section>
         <section id="team" class="text-center mt-12">
             <h3 class="font-bold text-green-700">TEAM MEMBERS</h3>
-            <h2 class="mt-2 font-bold text-3xl">Meet Out Team</h2>
+            <h2 class="mt-2 font-bold text-3xl text-black">Meet Out Team</h2>
             <p class="w-5/6 m-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             <div class="flex flex-wrap gap-x-2 gap-y-8 justify-evenly mt-12">
                 <div class="w-3/4 bg-gradient-to-br from-green-400 to-green-700 rounded-2xl text-white shadow-xl">
@@ -144,62 +136,61 @@
                 </div>
                 <div class="w-3/4 bg-green-100 rounded-3xl shadow-xl">
                     <img class="rounded-t-2xl" src="../src/member_2.jpg" alt="">
-                    <h3 class="font-bold text-lg mt-4">John Doe</h3><img src="" alt="">
+                    <h3 class="font-bold text-lg mt-4 text-black">John Doe</h3><img src="" alt="">
                     <p class="text-sm mt-1 mb-4">Co-Founder & Web Developer</p>
                 </div>
                 <div class="w-3/4 bg-green-100 rounded-3xl shadow-xl">
                     <img class="rounded-t-2xl" src="../src/member_3.jpg" alt="">
-                    <h3 class="font-bold text-lg mt-4">John Doe</h3>
+                    <h3 class="font-bold text-lg mt-4 text-black">John Doe</h3>
                     <p class="text-sm mt-1 mb-4">Designer</p>
                 </div>
                 <div class="w-3/4 bg-green-100 rounded-3xl shadow-xl">
                     <img class="rounded-t-2xl" src="../src/member_4.jpg" alt="">
-                    <h3 class="font-bold text-lg mt-4">Jane Doe</h3>
+                    <h3 class="font-bold text-lg mt-4 text-black">Jane Doe</h3>
                     <p class="text-sm mt-1 mb-4">Content Writer</p>
                 </div>
             </div>
             <button class="flex items-center p-2 px-4 mt-8 m-auto rounded-3xl bg-green-700 text-white">Join Us Now!</button>
         </section>
-        <section id="blog"> <!--Slideshow Gallery-->
-            <h3>BLOG</h3>
-            <h2>Our Latest News</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus soluta maiores quod, eaque expedita provident eum deleniti aperiam iusto optio.</p>
+        <section id="blog" class="mt-12 text-center">
+            <h3 class="font-bold text-green-700 mb-2">BLOG</h3>
+            <h2 class="font-bold text-3xl text-black">Our Latest News</h2>
+            <p class="mt-2 w-11/12 md:w-2/3 m-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus soluta maiores quod, eaque expedita provident eum deleniti aperiam iusto optio.</p>
             <div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
+                <div class="w-11/12 md:w-[300px] shadow-2xl m-auto relative">
+                    <img class="rounded-xl" src="https://images.unsplash.com/photo-1602765835989-b021fe3ed4f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+                    <div class="absolute z-10 text-white bottom-2 left-2 text-left">
+                        <img class="w-12 rounded-full border-2 border-solid border-white" src="https://images.unsplash.com/photo-1618077360395-f3068be8e001?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+                        <p class="text-[10px] mt-4">Date: 11 Dec 2010</p>
+                        <p class="text-lg font-bold mb-2">Title of the Blog Post</p>
+                    </div>
+                </div>
+                <div class="flex justify-evenly mt-4 md:mt-8">
+                        <img class="rounded-xl w-5/12 md:w-300px shadow-2xl" src="https://images.unsplash.com/photo-1516131206008-dd041a9764fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+                        <img class="rounded-xl w-5/12 md:w-300px shadow-2xl" src="https://images.unsplash.com/photo-1621109246687-10ae613f2d8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+                </div>
             </div>
         </section>
-        <section id="contact">
+        <section id="contact" class="text-center md:pt-10 mt-12 pb-8 bg-gradient-to-b from-white to-green-700">
             <div>
-                <h3>CONTACT US</h3>
-                <h2>Let's Talk About</h2>
-                <h2>Your <span>Information</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p>+01234567890</p>
+                <h3 class="font-bold text-green-700 mb-2">CONTACT US</h3>
+                <h2 class="font-bold text-3xl text-black">Let's Talk About</h2>
+                <h2 class="font-bold text-3xl">Your <span class="text-green-700">Projects</span></h2>
+                <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="font-bold mt-2"><span class="font-normal">Emergency Call: </span>+01234567890</p>
             </div>
-            <div>
+            <div class="hidden">
                 <img src="" alt="">
             </div>
         </section>
-        <section id="contact_out">
-            <h2>Do you have any project?</h2>
-            <h2>Contact Us</h2>
-            <button>Contact Us</button>
-        </section>
-        <section id="socials">
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <h2>Agency_Name</h2>
-                </div>
-                <p>email@example.com</p>
+        <section id="socials" class="text-center flex flex-wrap justify-evenly pt-8 bg-gradient-to-b from-green-700 to-white">
+            <div class="w-full">
+                <h2 class="font-bold text-white text-3xl leading-[inherit]">Agency_Name</h2>
+                <p class="mt-2">email@example.com</p>
                 <p>+01234567890</p>
             </div>
-            <div>
-                <h3>Services</h3>
+            <div class="w-5/12 mt-6 text-left">
+                <h3 class="text-xl font-bold text-black">Services</h3>
                 <p>Lorem, ipsum.</p>
                 <p>Repellendus, voluptas!</p>
                 <p>Accusantium, eum.</p>
@@ -207,30 +198,30 @@
                 <p>Laborum, molestiae?</p>
                 <p>Officia, dicta?</p>
             </div>
-            <div>
-                <h3>About Us</h3>
+            <div class="w-5/12 mt-6 text-left">
+                <h3 class="text-xl font-bold text-black">About Us</h3>
                 <p>Lorem, ipsum.</p>
                 <p>Ex, adipisci!</p>
                 <p>Repellendus, recusandae.</p>
                 <p>Ullam, aperiam?</p>
                 <p>Delectus, dolorem.</p>
             </div>
-            <div>
-                <h3>Out Address</h3>
+            <div class="mt-6">
+                <h3 class="text-xl font-bold text-black">Out Address</h3>
                 <p>Lorem, ipsum.</p>
-                <p>Nobis, omnis.</p>
-                <div>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
+                <p class="text-green-700">Nobis, omnis.</p>
+                <div class="mt-4 text-black">
+                    <i class='bx bxl-twitter text-4xl'></i>
+                    <i class='bx bxl-instagram text-4xl'></i>
+                    <i class='bx bxl-facebook text-4xl'></i>
+                    <i class='bx bxl-pinterest text-4xl'></i>
+                    <i class='bx bxl-snapchat text-4xl'></i>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="text-center bg-green-700 mt-6">
+        <p class="text-white text-sm p-2">2022 Copyright all right reserved</p>
     </footer>
 </body>
 </html>

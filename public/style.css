@@ -19,7 +19,6 @@
 .meeting:before{
     background: url('../src/green_doughnut.png');
     height: 200%;
-    width: 200%;
     background-size: contain;
     background-repeat: no-repeat;
     transform: translateY(5%) translateX(-25%);
